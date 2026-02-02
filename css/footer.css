@@ -17,27 +17,32 @@
     line-height: 1.33;
     color: #cccc;
 }
+
 .footer-contato li {
     font-weight: bold;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     line-height: 1.1;
     color: #ffff;
     margin-bottom: 30px;
 }
-    .footer-contato li a {
-        color: #ffff;
+
+.footer-contato li a {
+    color: #ffff;
+}
+
+.footer-copy {
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
-    .footer-copy {
-        grid-column: 1 / -1;
-        font-size: 1.125rem;
-        color: #8f8f8f;
+
+    .footer-contato li {
+        font-size: 1.5rem;
     }
-    @media (max-width: 800px) {
-        .footer-container {
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-        .footer-contato li {
-            font-size: 1.5rem;
-        }
-    }
+}
